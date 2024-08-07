@@ -1,2 +1,2 @@
 export const Access_Token = 'access'
-export const Refresh_Token = 'refresh'
+export const REFRESH_TOKEN = 'refresh'
