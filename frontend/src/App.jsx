@@ -1,13 +1,24 @@
 import react from 'react'
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import ProtectedRoutes from './components/ProtectedRoutes'
+import ProductList from './pages/ProductList'
+
 
 function App() {
 
   return (
     <BrowserRouter>
-      
-    </BrowserRouter
+      <Routes>
+
+        <Route path="/dashboard" element={
+          <ProtectedRoutes>
+            {/* <Dashboard /> */}
+          </ProtectedRoutes>
+        } />
+        <Route path="/" element={ <ProductList /> } />
+
+      </Routes>
+    </BrowserRouter>
   )
 }
 
