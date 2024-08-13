@@ -2,6 +2,7 @@ import react from 'react'
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import ProtectedRoutes from './components/ProtectedRoutes'
 import ProductList from './pages/ProductList'
+import HomePage from './pages/HomePage'
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
             {/* <Dashboard /> */}
           </ProtectedRoutes>
         } />
-        <Route path="/" element={ <ProductList /> } />
+        <Route path="/" element={ <HomePage /> } />
 
       </Routes>
     </BrowserRouter>
