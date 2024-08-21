@@ -14,7 +14,7 @@ const NavbarLoggedIn = () => {
                 <div className="navbar-links">
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
+                        <li><a href="products">Products</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Customer Service</a></li>
                     </ul>

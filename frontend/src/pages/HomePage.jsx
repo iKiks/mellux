@@ -1,5 +1,6 @@
 import React from 'react';
 import NavbarLoggedIn from './NavbarLoggedIn';
+import Footer from './Footer';
 import bg from '../assets/bg-shoe.jpg';
 import mencat from '../assets/mencat.jpg';
 import womencat from '../assets/womencat.jpg';
@@ -18,17 +19,18 @@ const HomePage = () => {
       <div className="categories-container">
         <div className="category">
           <a href="#">
-            <img src={mencat} alt="Men Category" />
+            <img src={mencat} alt="Men Category" className='category-image' />
             {/* <div className="centered">Men Category</div> */}
           </a>
         </div>
         <div className="category">
           <a href="#">
-            <img src={womencat} alt="Women Category" />
+            <img src={womencat} alt="Women Category" className='category-image' />
             {/* <div className="centered">Women Category</div> */}
           </a>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

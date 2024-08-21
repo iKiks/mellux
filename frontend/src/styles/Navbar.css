@@ -16,6 +16,7 @@
     position: fixed;
     width: 100%;
     height: 10vh;
+    z-index: 1;
 }
 
 .navbar-left {
@@ -80,4 +81,47 @@
     border-radius: 50%;
     padding: 0.1rem 0.4rem;
     line-height: 1;
+}
+
+
+/* ... existing CSS ... */
+
+/* Hamburger menu */
+.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .navbar-left, .navbar-links, .navbar-profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    flex-direction: column;
+    display: none;
+  }
+  .navbar-links li {
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+  .hamburger-menu {
+    display: block;
+    margin-right: auto;
+  }
+}
+
+/* Show navbar links on mobile when menu is open */
+.navbar-open .navbar-links ul {
+  display: flex;
+  flex-direction: column;
 }

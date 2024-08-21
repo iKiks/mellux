@@ -4,7 +4,6 @@ import ProtectedRoutes from './components/ProtectedRoutes'
 import ProductList from './pages/ProductList'
 import HomePage from './pages/HomePage'
 
-
 function App() {
 
   return (
@@ -17,6 +16,7 @@ function App() {
           </ProtectedRoutes>
         } />
         <Route path="/" element={ <HomePage /> } />
+        <Route path="/products" element={ <ProductList /> } />
 
       </Routes>
     </BrowserRouter>
