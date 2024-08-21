@@ -30,7 +30,7 @@ const HomePage = () => {
           </a>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
