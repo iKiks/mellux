@@ -1,6 +1,6 @@
 import React from 'react';
 import NavbarLoggedIn from './NavbarLoggedIn';
-import Footer from './Footer';
+// import Footer from './Footer';
 import bg from '../assets/bg-shoe.jpg';
 import mencat from '../assets/mencat.jpg';
 import womencat from '../assets/womencat.jpg';
